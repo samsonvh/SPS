@@ -1,0 +1,38 @@
+#head {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    box-shadow: 0 -8px 20px #f95f22;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+    #brand-section {
+        float: left;
+        width: calc(100% - 10vh);
+        height: 100%;
+    }
+    #function-section {
+        position: relative;
+        float: right;
+        width: 10vh;
+        height: 10vh;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #brand-section {
+        float: left;
+        width: 70%;
+        height: 100%;
+    }
+    #function-section {
+        position: relative;
+        float: right;
+        width: 30%;
+        height: 10vh;
+    }
+}

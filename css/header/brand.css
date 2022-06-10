@@ -1,0 +1,35 @@
+#logo-container {
+    display: inline-block;
+    position: relative;
+    margin: 0 6px 0;
+    width: 10vh;
+    height: 100%;
+}
+
+#logo-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+}
+
+#brand-container {
+    position: relative;
+    display: inline-block;
+    margin-left: -4.5px;
+    width: calc(100% - 10vh - 12px);
+    height: 100%;
+}
+
+#brand-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    font-size: 2.5vh;
+    font-weight: 700;
+    color: #f95f22;
+}

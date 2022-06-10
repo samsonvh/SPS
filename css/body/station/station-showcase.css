@@ -1,0 +1,35 @@
+@media screen and (max-width: 1200px) {}
+
+@media screen and (min-width: 1200px) {}
+
+.selected-showcase {
+    display: block !important;
+    transition: 1.5s;
+}
+
+#station-showcase {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: calc(calc(100vw - 48px) * 9 / 21);
+    background-image: linear-gradient(to bottom right, #f95f22, #008BFF);
+    border-radius: 4px;
+}
+
+#station-showcase .showcase {
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(calc(100vw - 48px) * 98 / 100);
+    height: calc(calc(calc(100vw - 48px) * 9 / 21) * 95 /100);
+}
+
+.station-image {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1.5s;
+}

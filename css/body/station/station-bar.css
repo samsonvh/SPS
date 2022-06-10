@@ -1,0 +1,44 @@
+#station-bar-container {
+    position: relative;
+    margin: 0 auto 24px;
+    height: 4vh;
+    width: 80%;
+    overflow-y: hidden;
+}
+
+.station-button {
+    margin-right: 24px;
+    display: inline-block;
+    padding: 0.7vh;
+    font-size: 2vh;
+}
+
+.station-button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    font-weight: 600;
+}
+
+.selected-station {
+    cursor: default !important;
+    font-weight: 600;
+    color: #f95f22;
+    border-bottom: 0.2vh solid #f95f22;
+    transition: 1s;
+}
+
+@media screen and (max-width: 1200px) {
+    #station-bar {
+        margin: 0 auto;
+        display: block;
+        width: max-content;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #station-bar {
+        margin: 0 auto;
+        display: block;
+        width: max-content;
+    }
+}

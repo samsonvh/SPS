@@ -1,0 +1,53 @@
+<script>
+    var menuBtn = document.getElementById('menu-button-container');
+    var menuIcon = document.getElementById('menu-icon');
+    var menu = document.getElementById('menu');
+
+    function openMenu() {
+        menuBtn.setAttribute('onclick', 'closeMenu()');
+        menuBtn.style.border = '1px solid';
+        menuIcon.style.fontSize = '8vw';
+        menu.style.width = '100vw';
+    }
+
+    function closeMenu() {
+        menuBtn.setAttribute('onclick', 'openMenu()');
+        menuBtn.style.border = 'none';
+        menuIcon.style.fontSize = '10vw';
+        menu.style.width = '0';
+    }
+</script>
+
+<script>
+    function changeBanner(isRight) {
+        var bannerImages = document.getElementsByClassName('banner-image');
+        for (let i = 0; i < bannerImages.length; i++) {
+            if (bannerImages[i].classList.contains('center-image')) {
+                if (isRight) {
+                    bannerImages[i].classList.remove('center-image');
+                    if (i == bannerImages.length - 1) {
+                        bannerImages[0].classList.add('center-image');
+                    } else {
+                        bannerImages[i + 1].classList.add('center-image');
+                    }
+                    break;
+                } else {
+                    bannerImages[i].classList.remove('center-image');
+                    if (i == 0) {
+                        bannerImages[bannerImages.length - 1].classList.add('center-image');
+                    } else {
+                        bannerImages[i - 1].classList.add('center-image');
+                    }
+                    break;
+                }
+            }
+        }
+    }
+    var bannerInterval = setInterval(() => {
+        changeBanner(true);
+    }, 3000);
+</script>
+
+<script>
+    window.onload = bannerInterval;
+</script>

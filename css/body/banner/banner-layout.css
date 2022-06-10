@@ -1,0 +1,51 @@
+@media screen and (max-width: 1200px) {
+    #banner-section {
+        position: relative;
+        height: 90vh;
+        width: 100%;
+        border-bottom: 0.2vh solid #f95f22;
+        background-image: linear-gradient(to bottom right, #f95f22, #008BFF);
+    }
+    #banner-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 98%;
+        height: 99%;
+    }
+    .banner-image {
+        position: absolute;
+        object-fit: cover;
+        width: 0;
+        height: 100%;
+        border-radius: 4px;
+        transition: 1.5s;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #banner-section {
+        position: relative;
+        height: calc(100vw * 9 / 21);
+        width: 100%;
+        border-bottom: 0.2vh solid #f95f22;
+        background-image: linear-gradient(to bottom right, #f95f22, #008BFF);
+    }
+    #banner-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 99%;
+        height: 98%;
+    }
+    .banner-image {
+        position: absolute;
+        object-fit: cover;
+        width: 0;
+        height: 100%;
+        border-radius: 2px;
+        transition: 1.5s;
+    }
+}

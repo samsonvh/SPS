@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saigon Paddle Station</title>
+
+    <!-- CSS: HEADER -->
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/header/header-layout.css">
+    <link rel="stylesheet" href="css/header/brand.css">
+    <link rel="stylesheet" href="css/header/function.css">
+
+    <!-- CSS: BANNER -->
+    <link rel="stylesheet" href="css/body/banner/banner-layout.css">
+
+    <!-- CSS: PROMOTION -->
+    <link rel="stylesheet" href="css/body/promotion/promotion-layout.css">
+
+    <!-- CSS: STATION -->
+    <link rel="stylesheet" href="css/body/station/station-layout.css">
+    <link rel="stylesheet" href="css/body/station/station-bar.css">
+    <link rel="stylesheet" href="css/body/station/station-showcase.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="head">
+            <!-- BRAND: BEGIN -->
+            <div id="brand-section">
+                <div id="logo-container">
+                    <img src="img/logo-min.png" alt="logo-image" id="logo-image">
+                </div>
+                <div id="brand-container">
+                    <p id="brand-name">SAIGON PADDLE STATION - TramCheo.VN</p>
+                </div>
+            </div>
+            <!-- BRAND: END -->
+
+            <!-- FUNCTION: BEGIN -->
+            <div id="function-section">
+                <div id="menu-button" onclick="openMenu()">
+                    <p id="menu-icon">&#9776</p>
+                </div>
+                <ul id="menu">
+                    <li class="menu-item">
+                        <div id="language-container">
+                            <label for="language-select" id="language-label"><b>Language: </b></label>
+                            <select name="language-select" id="language-select">
+                                <option value="en">EN</option>
+                                <option value="vi">VI</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <p id="hotline"><b>HOTLINE: </b>0000 000 000</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- FUNCTION: END -->
+        </div>
+        <div id="body">
+            <!-- BANNER: BEGIN -->
+            <div id="banner-section">
+                <div id="banner-container">
+                    <img src="img/banner/1.jpg" alt="banner-image" class="banner-image center-image">
+                    <img src="img/banner/2.jpg" alt="banner-image" class="banner-image right-image">
+                    <img src="img/banner/3.jpg" alt="banner-image" class="banner-image">
+                    <img src="img/banner/4.jpg" alt="banner-image" class="banner-image">
+                    <img src="img/banner/5.jpg" alt="banner-image" class="banner-image left-image">
+                </div>
+            </div>
+            <!-- BANNER: END -->
+
+            <!-- PROMOTION: BEGIN -->
+            <div id="promotion-section">
+                <div class="content-container">
+                    <div id="promotion-infor-container">
+                        <div class="heading-container">
+                            <h2 class="heading">Promotions</h2>
+                        </div>
+                        <div class="infor-container">
+                            <p class="infor">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed adipiscing diam donec adipiscing tristique risus nec. Nisi lacus sed viverra tellus in hac habitasse
+                                platea. Vitae tortor condimentum lacinia quis vel. Nibh praesent tristique magna sit amet purus gravida quis. Amet risus nullam eget felis. Diam maecenas sed enim ut. Egestas sed tempus urna et pharetra pharetra. At ultrices
+                                mi tempus imperdiet nulla malesuada. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum a. Gravida in fermentum et sollicitudin ac orci phasellus. Non nisi est sit amet facilisis magna etiam. Sit amet commodo nulla
+                                facilisi nullam. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Lobortis mattis aliquam faucibus purus in massa tempor.
+                            </p>
+
+                        </div>
+                        <div id="register-button-container">
+                            <a href="#" id="register-button">Join with us</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="promotion-container">
+                    <img src="img/promotion/1.jpg" alt="promotion-image" class="promotion-image center-image">
+                    <img src="img/promotion/2.jpg" alt="promotion-image" class="promotion-image right-image">
+                    <img src="img/promotion/3.jpg" alt="promotion-image" class="promotion-image">
+                    <img src="img/promotion/4.jpg" alt="promotion-image" class="promotion-image">
+                    <img src="img/promotion/5.jpg" alt="promotion-image" class="promotion-image left-image">
+                </div>
+            </div>
+            <!-- PROMOTION: END -->
+
+            <!-- STATION: BEGIN -->
+            <div id="station-section">
+                <div class="heading-container">
+                    <h2 class="heading">Stations</h2>
+                    <div id="station-bar-container">
+                        <ul id="station-bar">
+                            <li id="pmh" onclick="selectStation('pmh')" class="station-button selected-station">Phu My Hung</li>
+                            <li id="hatco" onclick="selectStation('hatco')" class="station-button">Hat Co Farmstay</li>
+                            <li id="swanbay" onclick="selectStation('swanbay')" class="station-button">Swanbay</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="station-showcase">
+                    <div id="pmh-showcase" class="showcase selected-showcase">
+                        <img src="img/station/pmh/1.jpg" alt="station-image" class="pmh-image station-image center-image">
+                        <img src="img/station/pmh/2.jpg" alt="station-image" class="pmh-image station-image right-image">
+                        <img src="img/station/pmh/3.jpg" alt="station-image" class="pmh-image station-image">
+                        <img src="img/station/pmh/4.jpg" alt="station-image" class="pmh-image station-image">
+                        <img src="img/station/pmh/5.jpg" alt="station-image" class="pmh-image station-image left-image">
+
+                        <div id="pmh-infor" class="station-infor-container selected-infor">
+                            <h5 class="infor-heading">Main Infor 1</h5>
+                            <hr>
+                            <p class="station-infor"></p>
+                        </div>
+                    </div>
+                    <div id="hatco-showcase" class="showcase">
+                        <img src="img/station/hatco/1.jpg" alt="station-image" class="hatco-image station-image center-image">
+                        <img src="img/station/hatco/2.jpg" alt="station-image" class="hatco-image station-image right-image">
+                        <img src="img/station/hatco/3.jpg" alt="station-image" class="hatco-image station-image">
+                        <img src="img/station/hatco/4.jpg" alt="station-image" class="hatco-image station-image">
+                        <img src="img/station/hatco/5.jpg" alt="station-image" class="hatco-image station-image left-image">
+
+                        <div id="hatco-infor" class="station-infor-container">
+                            <h5 class="infor-heading">Main Infor 2</h5>
+                            <hr>
+                            <p class="station-infor"></p>
+                        </div>
+                    </div>
+                    <div id="swanbay-showcase" class="showcase">
+                        <img src="img/station/swanbay/1.jpg" alt="station-image" class="swanbay-image station-image center-image">
+                        <img src="img/station/swanbay/2.jpg" alt="station-image" class="swanbay-image station-image right-image">
+                        <img src="img/station/swanbay/3.jpg" alt="station-image" class="swanbay-image station-image">
+                        <img src="img/station/swanbay/4.jpg" alt="station-image" class="swanbay-image station-image">
+                        <img src="img/station/swanbay/5.jpg" alt="station-image" class="swanbay-image station-image left-image">
+
+                        <div id="swanbay-infor" class="station-infor-container">
+                            <h5 class="infor-heading">Main Infor 3</h5>
+                            <hr>
+                            <p class="station-infor"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- STATION: END -->
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <script src="js/header-bar.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/station.js"></script>
+
+    <script>
+        var myIntervals = {};
+        // Banner script
+        let bannerImages = document.querySelectorAll('.banner-image');
+        myIntervals[0] = setInterval(() => {
+            slideImage(bannerImages, false);
+            console.log('banner changed');
+        }, 3000);
+        // Promotion script
+        let promotionImages = document.querySelectorAll('.promotion-image');
+        myIntervals[1] = setInterval(() => {
+            slideImage(promotionImages, false);
+            console.log('promotion changed');
+        }, 3000);
+        // Station script
+        selectStation('pmh');
+    </script>
+</body>
+
+</html>
